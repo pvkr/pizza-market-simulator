@@ -26,10 +26,10 @@ public class Pizza {
     private Long id;
 
     @Column(name = "name", nullable = false, unique = true)
-    private String pizzaName;
+    private String name;
 
-    @Column(name = "base_price", precision = 7, scale = 2, nullable = false)
-    private BigDecimal basePrice;
+    @Column(name = "price", precision = 7, scale = 2, nullable = false)
+    private BigDecimal price;
 
     @Column(name = "img_link", nullable = false)
     private String image;

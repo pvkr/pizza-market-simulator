@@ -19,10 +19,10 @@ insert into ingredient(id, name) values (18, 'Tomato');
 insert into ingredient(id, name) values (19, 'Pickled cucumbers');
 insert into ingredient(id, name) values (20, 'Greens');
 
-insert into pizza(id, name, base_price, img_link) values (1, 'Bavaria', 100.00, '/bavaria.png');
-insert into pizza(id, name, base_price, img_link) values (2, 'BBQ', 90.00, '/bbq.png');
-insert into pizza(id, name, base_price, img_link) values (3, 'Neapol', 80.00, '/neapol.png');
-insert into pizza(id, name, base_price, img_link) values (4, 'Venskaya', 105.00, '/venskaya.png');
+insert into pizza(id, name, price, img_link) values (1, 'Bavaria', 100.00, '/bavaria.png');
+insert into pizza(id, name, price, img_link) values (2, 'BBQ', 90.00, '/bbq.png');
+insert into pizza(id, name, price, img_link) values (3, 'Neapol', 80.00, '/neapol.png');
+insert into pizza(id, name, price, img_link) values (4, 'Venskaya', 105.00, '/venskaya.png');
 
 insert into pizza_ingredient(pizza_id, ingredient_id) values (1, 1);
 insert into pizza_ingredient(pizza_id, ingredient_id) values (1, 3);

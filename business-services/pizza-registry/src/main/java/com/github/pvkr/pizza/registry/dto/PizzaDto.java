@@ -8,8 +8,9 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 public class PizzaDto {
-    private String pizzaName;
-    private BigDecimal basePrice;
+    private Long id;
+    private String name;
+    private BigDecimal price;
     private String image;
     private String description;
 }
