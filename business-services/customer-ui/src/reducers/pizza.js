@@ -1,6 +1,13 @@
+import { combineReducers } from 'redux'
 import * as types from '../constants/ActionTypes'
 
-const ids = (state = {}, action) => {
+const isLoaded = (state = false, action) => {
+  if (action.type === types.GET_PIZZAS)
+    return true;
+  return state;
+}
+
+const pizzaMap = (state = {}, action) => {
   switch (action.type) {
     case types.GET_PIZZAS:
       return {
@@ -16,4 +23,7 @@ function toMap(array, getKeyFunc) {
   return array.reduce((obj, item) => {obj[getKeyFunc(item)] = item; return obj}, {})
 }
 
-export default ids
+export default combineReducers({
+    isLoaded,
+    map: pizzaMap
+})

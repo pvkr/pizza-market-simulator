@@ -16,7 +16,7 @@ PizzaListContainer.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  pizzas: Object.values(state.pizzas)
+  pizzas: Object.values(state.pizza.map)
 })
 
 export default connect(mapStateToProps, {})(PizzaListContainer)
